@@ -13,9 +13,9 @@ symbols_count = {
 
 symbols_value = {
     "A": 1.5,
-    "B": 1,
-    "C": 0.6,
-    "D": 0.4,
+    "B": 0.6,
+    "C": 0.4,
+    "D": 0.2,
 }
 
 def check_win(result,bet,values):
@@ -75,6 +75,9 @@ def game(balance):
     line = MAX_LINES
     bet = get_bet()
     total_bet = bet * line
+    if balance < MIN_BET:
+            print("You don't have enough balance to play. Goodbye!")
+            exit()
     while total_bet > balance:
         print("Insufficient funds. Please try again.")
         bet = get_bet()
