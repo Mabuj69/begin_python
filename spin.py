@@ -5,17 +5,19 @@ MAX_BET = 1000
 MIN_BET = 1
 
 symbols_count = {
-    "A": 2,
-    "B": 3,
-    "C": 4,
-    "D": 5,
+    "A": 3,
+    "B": 4,
+    "C": 5,
+    "D": 6,
+    "E": 8,
 }
 
 symbols_value = {
     "A": 1.5,
-    "B": 0.6,
-    "C": 0.4,
-    "D": 0.2,
+    "B": 0.7,
+    "C": 0.5,
+    "D": 0.3,
+    "E": 0.2,
 }
 
 def check_win(result,bet,values):
